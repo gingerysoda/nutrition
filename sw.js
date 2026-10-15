@@ -1,6 +1,6 @@
 // Nutrition service worker: app shell works offline; data always comes from your database.
-const VERSION = 'nutrition-v3';
-const SHELL = ['./', 'index.html', 'styles.css', 'main.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/apple-touch-icon.png'];
+const VERSION = 'nutrition-v3.1';
+const SHELL = ['./', 'index.html', 'styles.css?v=31', 'main.js?v=31', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(VERSION).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
