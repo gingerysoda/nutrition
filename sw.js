@@ -1,5 +1,5 @@
 // Nutrition service worker: app shell works offline; data always comes from your database.
-const VERSION = 'nutrition-v1';
+const VERSION = 'nutrition-v3';
 const SHELL = ['./', 'index.html', 'styles.css', 'main.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {
